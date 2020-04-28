@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/abbandi/SpaceGame/_apis/build/status/abandiDev.mslearn-tailspin-spacegame-web?branchName=master)](https://dev.azure.com/abbandi/SpaceGame/_build/latest?definitionId=6&branchName=master)
 
 # Contributing
 
