@@ -53,10 +53,10 @@
       arguments: 'install --global dotnet-reportgenerator-globaltool'
 
   - task: DotNetCoreCLI@2
-    displayName: 'Run unit test $(buildConfiguration)'
+    displayName: 'Run unit tests - $(buildConfiguration)'
     inputs:
       command: 'test'
-      arguments: '--no-buld --configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.sourcesDirectory)/TestResults/Coverage/'
+      arguments: '--no-build --configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
       publishTestResults: true
       projects: '**/*.Tests.csproj'
   
